@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Starbucks website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="L1.webp" width=80 length=40 class="logo"></a>
+            <ul>
+                <li><a href=#>Home</a></li>
+                <li><a href=#>Menu</a></li>
+                <li><a href=#>What's New</a></li>
+                <li><a href=#>Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>it's not just a coffee<br>it's<span> Starbucks</span></h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo autem consequatur, illo cum officia
+                    architecto temporibus praesentium dicta, aperiam quis vero dolorem dolor quibusdam tenetur delectus
+                    aspernatur iste doloremque asperiores amet fugit itaque. Rerum, ipsa doloremque. Fugiat quam
+                    quisquam eaque.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div class="imgbox">
+                <img src="L5.jpg" width="300" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="L6.jpg" oneclick="imgSlider ('L6.jpg'); changecirclecolor('#017143')"></li>
+            <li><img src="Starbucks-Cup-PNG-Image.png" oneclick="imgSlider('Starbucks-Cup-PNG-Image.png');  changecirclecolor ('#eb7495')"></li>
+            <li><img src="L8.jpg" oneclick="imgSlider ('L8.jpg'); changecirclecolor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="Instagram-Logo.png" width="40" length="40"></a></li>
+            <li><a href="#"><img src="Facebook-logo.png" width="40" length="40"></a></li>
+            <li><a href="#"><img src="twitter logo.png" width="30" length="30"></a></li> 
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Starbucks').src = anything;  
+        }  
+        function changecirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
